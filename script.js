@@ -15,7 +15,7 @@ window.addEventListener("scroll", handleScroll);
 
 let colorIndex = 0;
 const colors = ["yellow", "white","red"];
-const texts = ["Network Engineering", "Journalist",];
+const texts = ["Network Engineering", "Journalist","Web Developer"];
 
 function changeTextAndColor() {
     const spanElement = document.getElementById('keterangan-porto');

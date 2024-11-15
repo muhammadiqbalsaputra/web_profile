@@ -7,6 +7,7 @@ body{
     background-color: #ececec;
 }
 
+/* Navbar */
 nav {
     width: 100%;
     background-color: transparent;
@@ -70,6 +71,7 @@ nav.scrolled {
     background-image: linear-gradient(to left, darkblue, blue);
 }
 
+/* Section Home */
 #home{
     height: 500px;
     width: 100%;
@@ -157,6 +159,7 @@ nav.scrolled {
     margin-left: 250px;
 }
 
+/* Section about */
 #about{
     background-image: linear-gradient(to left, darkblue, blue);
     border-radius: 0px 100px 0px 100px;
@@ -312,6 +315,7 @@ nav.scrolled {
     width: 100px;
 }
 
+/* Project */
 #project {
     padding: 40px 0;
 }
@@ -441,20 +445,19 @@ footer {
     transition: 1s;
 }
 
-/* Media Queries for Responsiveness */
 
 /* Tablet devices */
 @media screen and (max-width: 1024px) {
     #home .container {
         margin-left: 0; /* Remove left margin for smaller screens */
         flex-direction: column; /* Stack children vertically */
-        align-items: center; /* Center align items */
+        align-items: center; 
     }
 
     #home .container img {
         position: relative;
-        width: 60%; /* Make the image responsive */
-        bottom: 300px; /* Add space below image */
+        width: 60%; 
+        bottom: 300px; 
         left: 600px;
     }
 
@@ -475,73 +478,77 @@ footer {
     }
 
     #about .container .biodata {
-        width: 100%; /* Make biodata full width */
-        max-width: 600px; /* Limit width on larger tablets */
+        width: 100%; 
+        max-width: 600px; 
     }
 
     .card-container .card {
-        width: 70%; /* Cards take more width on tablet */
+        width: 70%; 
 
     }
 
     .hero-section img {
-        width: 100%; /* Make hero image responsive */
-        margin-left: 0; /* Remove left margin */
+        width: 100%; 
+        margin-left: 0; 
     }
 }
 
 /* Mobile devices */
 @media screen and (max-width: 768px) {
+    *{
+        width: 768px;
+    }
     nav {
-        background-color: transparent; /* Keep transparent background */
-        flex-direction: column; /* Stack items vertically */
+        background-color: transparent;
+        flex-direction: column; 
     }
 
     nav ul {
-        flex-direction: column; /* Align nav items vertically */
+        flex-direction: column; 
     }
 
     #home .container {
-        flex-direction: column; /* Stack container items vertically */
-        margin-left: 0; /* Remove left margin */
-        align-items: center; /* Center align items */
+        flex-direction: column; 
+        margin-left: 0; 
+        align-items: center; 
     }
 
     #home .container img {
-        width: 90%; /* Make images responsive */
-        margin-bottom: 20px; /* Space below image */
+        width: 90%; 
+        margin-bottom: 20px; 
     }
 
     #about .container {
-        flex-direction: column; /* Stack biodata vertically */
-        gap: 20px; /* Adjust gap for mobile spacing */
+        flex-direction: column;
+        gap: 20px; 
     }
 
     #about .container .biodata {
-        width: 90%; /* Make biodata full width */
-        max-width: 90%; /* Limit width for mobile */
+        width: 90%; 
+        max-width: 90%; 
     }
 
     .card-container .card {
-        width: 100%; /* Cards take full width on mobile */
-        margin: 10px 0; /* Vertical margin for cards */
+        width: 100%;
+        margin: 10px 0; 
+        scale: -1.5;
     }
 
     .hero-section img {
-        width: 100%; /* Make hero image responsive */
-        margin-left: 0; /* Remove left margin */
+        width: 100%; 
+        margin-left: 0; 
     }
 
     #project .container-project {
-        display: block; /* Stack project items vertically */
+        display: block; 
     }
 
     .project {
-        width: 90%; /* Make project cards responsive */
-        margin: 10px auto; /* Center project cards */
+        width: 90%; 
+        margin: 10px auto; 
     }
 
     .contact-icons {
-        flex-direction: column; /* Stack contact icons vertically */
+        flex-direction: column; 
     }
 }
